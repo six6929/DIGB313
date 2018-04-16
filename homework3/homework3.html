@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+   <meta charset="utf-8">
+   <title>Homework3</title>
+   <link rel="stylesheet" href="css/reset.css" />
+   <link rel="stylesheet" href="css/homework3.css" />
+</head>
+<body>
+  <form action="http://www.randyconnolly.com/tests/process.php" method="get">
+<fieldset>
+  <legend>Photo Details</legend>
+
+<div id="header">
+   <p> Title <br/><input type="text" size="100" name="Title"> </p>
+   <p> Description <br/><textarea cols="100" rows="3" name="Description"></textarea></p>
+ </div>
+
+<div id="Both">
+  <div id="left">
+   <p>Continent
+      <br/>
+     <select name="Continent">
+       <option value="">Choose Continent</option>
+       <option value="North America">North America</option>
+       <option value="South America">South America</option>
+       <option value="Asia">Asia</option>
+       <option value="Europe">Europe</option>
+       <option value="Africa">Africa</option>
+       <option value="Oceania">Oceania</option>
+    </select>
+  </p>
+
+  <p> Country
+   <br/>
+    <select name="Country">
+      <option value="">Choose country</option>
+      <option value="Canada">Canada</option>
+      <option value="US">US</option>
+      <option value="Korea">Korea</option>
+    </select>
+   </p>
+
+   <label for="city"> City </label><br/><input type="text" size="50" name="city" id="city" required>
+ </div>
+
+ <div id="right">
+   <fieldset>
+    <p>Copyright?<br>
+       <input type="radio" value="1" name="Copyright">All rights reserved<br>
+       <input type="radio" value="2" name="Copyright">Creative Commons<br>
+    </p>
+   </fieldset>
+
+   <fieldset>
+     <p>Creative Commons Types<br>
+       <input type="checkbox" value="On" name="CC">Attribution<br>
+       <input type="checkbox" value="On" name="CC">Noncommercial<br>
+       <input type="checkbox" value="On" name="CC">No Derivative works<br>
+       <input type="checkbox" value="On" name="CC">Share Alike
+     </p>
+   </fieldset>
+ </div>
+</div>
+
+
+<div id="footer">
+  <div id="accept">
+   <p> I accept the software license <input type="checkbox" value="On" name="accept"></p>
+ </div>
+<div id="L">
+   <p><label for="Rate"> Rate this photo : <br/></label><input type="number" id="Rate" name="rate" /></p>
+   <p><label for="Color">Color Collection : <br/></label><input type="Color" id="Color" name="Color"/></p>
+  </div>
+
+ <div id="R">
+   <fieldset>
+     <p><label for="date">Date Taken: <br></label><input type="date" id="date" name="Date" /></p>
+     <p><label for="time">Time Taken: <br></label><input type="time" id="time" name="time" /></p>
+   </fieldset>
+ </div>
+</div>
+
+  <div id="submitButtons">
+    <p>
+    <input type="submit" value="Submit" />
+    <input type="submit" value="Clean form" />
+  </p>
+  </div>
+
+  </fieldset>
+  <form>
+ </body>
+</html>

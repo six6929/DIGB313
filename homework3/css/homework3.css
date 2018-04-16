@@ -1,0 +1,88 @@
+/* general text formatting */
+
+h1, h2, h3, nav, footer {
+ font-family: Georgia, Cambria, "Times New Roman", serif;
+}
+body {
+   font-family: "Lucida Sans", Verdana, Arial, sans-serif;
+   font-size: 100%;
+   margin-left: 220px;
+   margin-right: 220px;
+   position : absolute;
+}
+
+#header {
+  /* margin : 20px; */
+}
+
+#header p {
+  margin : 10px;
+  font-size: 90%;
+}
+
+#left {
+  /* margin : 20px 20px 20px 50px; */
+  font-size: 90%;
+  float :left;
+  /* position: relative; */
+
+}
+
+#left p {
+  margin : 10px;
+}
+
+#right {
+  margin : 20px;
+  /* position : relative; */
+}
+
+#right p{
+  margin : 10px;
+}
+
+p {
+  margin : 10px;
+}
+
+
+fieldset, input, select, textarea {
+  border: 1px dashed gray;
+}
+
+#right fieldset {
+  width : 220px;
+  height : auto;
+  float : right;
+  clear : right;
+}
+
+
+legend {
+  width : 600px;
+  text-align: center;
+}
+
+#Both {
+  height : 250px;
+}
+
+#L {
+  float : left;
+  clear : left;
+}
+
+#R {
+  float : right;
+  clear : right;
+}
+
+#footer {
+  height : 160px;
+}
+
+#submitButtons {
+  text-align: center;
+  float : left;
+  margin-left: 280px;
+}
