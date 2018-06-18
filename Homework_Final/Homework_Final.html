@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 user-scalable=no">
+<title> Shin Won Ho's Portfolio</title>
+<link rel="stylesheet" type="text/css" href="css/Homework_Final.css">
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJlm_fQlgR8usBba9QaWXX_p2jM7gpfrc&sensor=false&libraries=places"></script>
+<script src ="js/jquery-1.9.0%20min.js"></script>
+<script src="js/index.js"></script>
+</head>
+<body onload="initialize()">
+  <div id="wrap">
+     <header>
+       <ul id="gnb">
+         <li><a href="#c1">Profile</a></li>
+         <li><a href="#c2">Web Skill</a></li>
+         <li><a href="#c3">Qualificaiton</a></li>
+         <li><a href="#c4">Hometown</a></li>
+       </ul>
+     </header>
+
+<div id="content">
+  <div id="c1">
+    <h1>Profile</h1>
+    <div class="profile">
+    <div class="profile1">
+      <h2>About Me</h2>
+      <ul class="about">
+        <li> Name : 신원호 </li>
+        <li> Birth : 94.08.28 (Miryang)</li>
+        <li> Hobby : Soccer, Billiards </li>
+        <li> Address : 경남 밀양시 중앙로 238-8 청구 APT 102 - 1403</li>
+      </ul>
+    </div>
+      <div class="profile2">
+        <h2>I study hard</h2>
+        <a href="https://github.com/six6929" target="_blank"><img src="img/img6.jpg" alt="Studying"></a>
+      </div>
+      <div class="profile3">
+        <h2>SNS</h2>
+        <ul>
+          <li><a href="https://www.facebook.com/profile.php?id=100003763191216" target="_blank"><img src="img/facebook.png" alt="facebook"></a></li>
+          <li><a href="https://www.instagram.com/swh_k/"><img src="img/instagram.png" alt="instagram" target="_blank"></a></li>
+          <li><a href="#"><img src="img/kakaostory.png" alt="kakaostory"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="c2">
+    <h1>Web Skill</h1>
+    <div class="skill_center">
+      <div id="progress0" class="pro">
+        <div class="subject">HTML</div>
+        <div class="progress">
+          <span class="bar"></span>
+        </div>
+        <div class="bar_txt">90</div>
+      </div>
+        <div id="progress1" class="pro">
+          <div class="subject">CSS</div>
+          <div class="progress">
+            <span class="bar"></span>
+          </div>
+          <div class="bar_txt">90</div>
+        </div>
+        <div id="progress2" class="pro">
+          <div class="subject">Javascript</div>
+          <div class="progress">
+            <span class="bar"></span>
+          </div>
+          <div class="bar_txt">50</div>
+        </div>
+        <div id="progress3" class="pro">
+          <div class="subject">Jquery</div>
+          <div class="progress">
+            <span class="bar"></span>
+          </div>
+          <div class="bar_txt">40</div>
+        </div>
+        <div id="progress4" class="pro">
+          <div class="subject">Ajax/Json</div>
+          <div class="progress">
+            <span class="bar"></span>
+          </div>
+          <div class="bar_txt">30</div>
+        </div>
+        <div id="progress5" class="pro">
+          <div class="subject">Responsive</div>
+          <div class="progress">
+            <span class="bar"></span>
+          </div>
+          <div class="bar_txt">20</div>
+        </div>
+        <div id="progress6" class="pro">
+          <div class="subject">API</div>
+          <div class="progress">
+            <span class="bar"></span>
+          </div>
+          <div class="bar_txt">50</div>
+        </div>
+      </div>
+  </div>
+
+<div id="c3">
+  <h1> Qualificaiton </h1>
+  <section class="Qualificaiton">
+
+        <a href="#c3"><img class="Q_list dis-none dis-block" src="img/boss.jpg" alt="MIS_Boss"></a>
+        <a href="#c3"><img class="Q_list dis-none" src="img/boss2.jpg" alt="MIS_Boss"></a>
+        <a href="#c3"><img class="Q_list dis-none" src="img/boss3.jpg" alt="MIS_Boss"></a>
+        <a href="#c3"><img class="Q_list dis-none" src="img/award.jpg" alt="experience "></a>
+        <a href="#c3"><img class="Q_list dis-none" src="img/award2.jpg" alt="experience"></a>
+        <a href="#c3"><img class="Q_list dis-none" src="img/award3.jpg" alt="experience"></a>
+
+
+      <div class="arrow">
+        <button id="prev"><img src="img/Larrow.png" alt="이전" /></button>
+        <button id="next"><img src="img/Rarrow.png" alt="다음" /></button>
+      </div>
+    </section>
+</div>
+<div id="c4">
+  <h1> My Hometown </h1>
+  <input id="address" type="text" size="50">
+  <div id="map_canvas" style="width:800px; height:400px;"></div>
+</div>
+  <hr/>
+
+<footer>
+  <p> Wep Developer_Shin.WonHo </p>
+  <p> TEL : 010-3516-6929 </p>
+  <p> E-mail : six6929@naver.com</p>
+  <a href="#" class="top">top</a>
+</footer>
+</div>
+</div>
+</body>
+<script>
+  window.onload=function() {
+  var idx = 0;
+  for(var i=0; i<document.querySelectorAll('.Q_list').length; i++) {
+    document.querySelectorAll('.Q_list')[i].style.display = 'none';
+  }
+  document.querySelector('.Q_list').style.display='block';
+
+  document.querySelector('#prev').addEventListener('click', function() {
+    document.querySelectorAll('.Q_list')[idx].style.display = 'none';
+    if(idx===0) {
+      idx = document.querySelectorAll('.Q_list').length-1;
+    } else {
+      idx--;
+    }
+    document.querySelectorAll('.Q_list')[idx].style.display = 'block';
+  });
+
+  document.querySelector('#next').addEventListener('click', function() {
+    document.querySelectorAll('.Q_list')[idx].style.display = 'none';
+    if(idx===(document.querySelectorAll('.Q_list').length-1)) {
+      idx = 0;
+    } else {
+      idx++;
+    }
+    document.querySelectorAll('.Q_list')[idx].style.display = 'block';
+  })
+}
+
+</script>
+</html>

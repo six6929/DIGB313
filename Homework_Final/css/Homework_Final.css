@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/* Common */
+html,body{width:100%;height:100%}
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
+body,input,textarea,select,button{font-family:'Trebuchet MS',AppleGothic,sans-serif;font-size:12px}
+img{vertical-align:top;border: 0}
+ul,ol{list-style:none}
+hr{display:none}
+a{text-decoration:none}
+a:hover,a:active,a:focus{text-decoration:underline}
+
+/*header*/
+header{position: fixed; width: 100%; left: 0; top:0; z-index: 100}
+#gnb{border-bottom: 2px solid #000;background: #fff;overflow: auto;z-index: 100;box-shadow: 3px 3px 3px rgba(0,0,0,0.3);}
+#gnb li{float: left;width: 25%;}
+#gnb li a{display :block;padding: 15px 0;border-right: 1px solid #ccc;text-align: center;color: #03b7be}
+#gnb li a.on{background: #03b7be;color: #fff;}
+
+/*content*/
+#content #c1 > h1{text-align: center;font-size: 20px;padding:10px 0;border-bottom: 2px solid #afafaf;border-top: 2px solid #afafaf;}
+#content #c1 .profile {overflow: hidden; padding: 30px; font-size: 14px;}
+#content #c1 .profile>div {float: left;width: 33.3%;box-sizing: border-box;}
+#content #c1 .profile .profile1{text-align: center;border-top:2px solid #ccc;margin-top: 20px;padding-top: 20px;}
+#content #c1 .profile .profile1 .about{margin-top: 30px;}
+#content #c1 .profile .profile1 .about li{font-size: 14px;margin-bottom: 15px;}
+#content #c1 .profile .profile2{text-align: center;border-bottom: 2px solid #ccc;border-left: 2px solid #ccc;}
+#content #c1 .profile .profile2 h2 {margin-bottom: 20px;}
+#content #c1 .profile .profile2 img {width: 200px;height: 250px;margin-bottom: 20px;box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.3);}
+#content #c1 .profile .profile3 {padding-top: 20px;margin-top: 50px;border-top: 2px solid #ccc;border-left:2px solid #ccc;text-align: center;}
+#content #c1 .profile .profile3 img {width: 60px;height: 60px;margin: 10px;}
+/* #content #c1 .profile .profile3 ul  */
+
+
+#content #c2 > h1 {text-align: center;font-size: 20px;padding:10px 0;border-bottom: 2px solid #afafaf;border-top: 2px solid #afafaf;}
+#content #c2 .skill_center{width: 590px;margin: 0 auto;padding: 20px;}
+#content #c2 .skill_center>div{padding-bottom: 10px;}
+#content #c2 .pro{overflow: hidden;margin-bottom: 5px;}
+#content #c2 .pro .subject{float: left;width: 80px;height: 22px;line-height: 22px;font-size: 15px;font-weight: bold;margin-right: 80px;}
+#content #c2 .pro .progress{float: left;width: 300px;height: 22px;background: #eee;border: 1px solid #ccc;position: relative;border-radius: 10px}
+#content #c2 .pro .progress .bar{display: block;background: #03b7be;position: absolute;left: 0;top: 1px;height: 20px;width: 0;border-radius: 10px;}
+#content #c2 .pro .bar_txt {float: left;height: 22px;line-height: 22px;font-size: 18px;color: #03b7be;margin-left: 90px;}
+
+#content #c3 > h1 {text-align: center;font-size: 20px;padding:10px 0;border-bottom: 2px solid #afafaf;border-top: 2px solid #afafaf;}
+#content #c3 .Q_list {position : relative; margin:50px auto; padding:0;list-style:none;width:600px;height:300px;overflow-x:hidden;}
+#content #c3 .arrow img {width:50px; height:50px; margin:0 auto;}
+
+#content #c4 > h1 {text-align: center;font-size: 20px;padding:10px 0;border-bottom: 2px solid #afafaf;border-top: 2px solid #afafaf;}
+#content #c4 #map_canvas{margin-left:28%; margin-bottom: 100px;}
+#content #c4 #address {margin-left:40%;margin-top:100px;margin-bottom:30px;}
+
+/*footer*/
+footer {background: #666;text-align: center;padding: 100px 0;color: #fff;}
+footer p {font-size: 30px;margin-bottom: 10px;}
+footer .top{display :none;width: 30px;height: 30px;border: 1px solid #666;background: #eee;line-height: 30px;text-align: center;position: fixed;bottom: 20px;right: 0;}
+}
